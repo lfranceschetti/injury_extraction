@@ -1,7 +1,9 @@
 import zipfile
 import xml.dom.minidom as minidom
 import sys
-
+import re
+import xml.etree.ElementTree as ET
+from datetime import datetime
 
 
 def extract_xml_from_docx(docx_path, output_file=None):
@@ -41,8 +43,6 @@ def extract_xml_from_docx(docx_path, output_file=None):
         print(f"Error: {e}")
         sys.exit(1)
 
-import zipfile
-import xml.etree.ElementTree as ET
 
 def extract_injury_form_data(docx_path):
     """
@@ -60,32 +60,67 @@ def extract_injury_form_data(docx_path):
         xml_content = docx_zip.read('word/document.xml')
     
     root = ET.fromstring(xml_content)
+
+    # Precompute paragraphs and their texts once
+    paragraphs = list(root.findall('.//w:p', namespaces))
+    para_texts = [''.join([t.text for t in p.findall('.//w:t', namespaces) if t.text]) for p in paragraphs]
+
+    # Small helpers to DRY up repeated patterns
+    def get_text_display_from_runs(runs, start_idx):
+        """Return displayed text for a FORMTEXT field that begins at runs[start_idx]."""
+        text_value = ""
+        found_separate = False
+        for j in range(start_idx + 1, len(runs)):
+            nxt = runs[j]
+            if found_separate:
+                t_el = nxt.find('.//w:t', namespaces)
+                if t_el is not None and t_el.text:
+                    text_value += t_el.text
+                end_char = nxt.find('.//w:fldChar[@w:fldCharType="end"]', namespaces)
+                if end_char is not None:
+                    break
+            separate_char = nxt.find('.//w:fldChar[@w:fldCharType="separate"]', namespaces)
+            if separate_char is not None:
+                found_separate = True
+        return text_value.strip()
+
+    def find_section_bounds(start_marker, end_marker):
+        start_idx_local = None
+        end_idx_local = None
+        for idx, text in enumerate(para_texts):
+            lowered = (text or '').lower()
+            if start_idx_local is None and start_marker in lowered:
+                start_idx_local = idx
+            elif start_idx_local is not None and end_marker and end_marker in lowered:
+                end_idx_local = idx
+                break
+        return start_idx_local, end_idx_local
     
 
     injury_data_names = [
-        "Name",
-        "Team",
-        "Code",
-        "Injury Date",
-        "Return Date",
-        "Injury Location",
-        "Injury Side",
-        "Injury Type",
-        "Occurrence",
-        "Overuse/Trauma",
-        "Onset",
-        "Contact",
-        "Action",
-        "Action Description",
-        "Re-injury",
-        "Referee Sanction",
-        "Diagnostic Examination",
-        "Diagnosis",
-        "Surgery",
-        "Menstrual Phase",
-        "Oral Contraceptives",
-        "Hormonal Contraceptives",
-        "Other Comments"
+        "NAME",
+        "TEAM",
+        "CODE",
+        "INJURY_DATE",
+        "RETURN_DATE",
+        "INJURY_LOCATION",
+        "INJURY_SIDE",
+        "INJURY_TYPE",
+        "OCCURRENCE",
+        "OVERUSE_TRAUMA",
+        "ONSET",
+        "CONTACT",
+        "ACTION",
+        "ACTION_DESCRIPTION",
+        "RE_INJURY",
+        "REFEREE_SANCTION",
+        "DIAGNOSTIC_EXAMINATION",
+        "DIAGNOSIS",
+        "SURGERY",
+        "MENSTRUAL_PHASE",
+        "ORAL_CONTRACEPTIVES",
+        "HORMONAL_CONTRACEPTIVES",
+        "OTHER_COMMENTS"
     ]
 
     injury_data = {name: "" for name in injury_data_names}
@@ -95,8 +130,8 @@ def extract_injury_form_data(docx_path):
     # Extract text fields (FORMTEXT)
     text_fields = {}
     
-    # Build a map of all paragraphs and their elements
-    for para in root.findall('.//w:p', namespaces):
+    # Build a map of all text input fields and their displayed values
+    for para in paragraphs:
         elements = list(para.findall('.//w:r', namespaces))
         
         for i, run in enumerate(elements):
@@ -109,36 +144,13 @@ def extract_injury_form_data(docx_path):
                     
                     # Check if it's a text input (not checkbox)
                     text_input = ffdata.find('.//w:textInput', namespaces)
-                    if text_input is not None:
-                        # Find text between separate and end
-                        text_value = ""
-                        found_separate = False
-                        
-                        for j in range(i + 1, len(elements)):
-                            next_run = elements[j]
-                            
-                            if found_separate:
-                                text_elem = next_run.find('.//w:t', namespaces)
-                                if text_elem is not None and text_elem.text:
-                                    text_value += text_elem.text
-                                
-                                end_char = next_run.find('.//w:fldChar[@w:fldCharType="end"]', namespaces)
-                                if end_char is not None:
-                                    break
-                            
-                            separate_char = next_run.find('.//w:fldChar[@w:fldCharType="separate"]', namespaces)
-                            if separate_char is not None:
-                                found_separate = True
-                        
-                        if field_name:
-                            text_fields[field_name] = text_value.strip()
+                    if text_input is not None and field_name:
+                        text_fields[field_name] = get_text_display_from_runs(elements, i)
     
-    # Extract checkboxes
+    para_texts = []
     checkboxes = {}
     # Keep ordered entries with paragraph indices for section-scoped extraction
     checkbox_entries = []
-    para_texts = []
-    
     for para_idx, para in enumerate(root.findall('.//w:p', namespaces)):
         # Aggregate full paragraph text (runs may split words)
         para_text = ''.join([t.text for t in para.findall('.//w:t', namespaces) if t.text])
@@ -196,21 +208,7 @@ def extract_injury_form_data(docx_path):
                             if fld_begin_ahead is not None:
                                 ffdata_ahead = fld_begin_ahead.find('.//w:ffData', namespaces)
                                 if ffdata_ahead is not None and ffdata_ahead.find('.//w:textInput', namespaces) is not None:
-                                    text_value_tmp = ""
-                                    found_separate_tmp = False
-                                    for k in range(j + 1, len(elements)):
-                                        look_run = elements[k]
-                                        if found_separate_tmp:
-                                            t_el = look_run.find('.//w:t', namespaces)
-                                            if t_el is not None and t_el.text:
-                                                text_value_tmp += t_el.text
-                                            end_char_tmp = look_run.find('.//w:fldChar[@w:fldCharType="end"]', namespaces)
-                                            if end_char_tmp is not None:
-                                                break
-                                        separate_char_tmp = look_run.find('.//w:fldChar[@w:fldCharType="separate"]', namespaces)
-                                        if separate_char_tmp is not None:
-                                            found_separate_tmp = True
-                                    following_text = text_value_tmp.strip()
+                                    following_text = get_text_display_from_runs(elements, j)
                                     break
                                 # If another field begins but it's not a text input, stop looking further in this paragraph
                                 break
@@ -221,23 +219,10 @@ def extract_injury_form_data(docx_path):
                             checkboxes[key] = {'checked': is_checked, 'label': label.strip()}
                             checkbox_entries.append(entry)
     
-    # Parse player details from text fields
-    # Extract all text content to find specific values
-    all_text = ' '.join([t.text for t in root.findall('.//w:t', namespaces) if t.text])
-    
-
      
     # Helper to collect checked labels between two section headers
     def extract_checkbox(start_marker, end_marker, only_one=False):
-        start_idx_local = None
-        end_idx_local = None
-        for idx, text in enumerate(para_texts):
-            lowered = (text or '').lower()
-            if start_idx_local is None and start_marker in lowered:
-                start_idx_local = idx
-            elif start_idx_local is not None and end_marker and end_marker in lowered:
-                end_idx_local = idx
-                break
+        start_idx_local, end_idx_local = find_section_bounds(start_marker, end_marker)
         results = []
         if start_idx_local is not None:
             for entry in checkbox_entries:
@@ -253,6 +238,8 @@ def extract_injury_form_data(docx_path):
                         label_text = "Yes"
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
                             label_text = entry.get('following_text')
+                    elif entry["label"] and entry["label"].strip().startswith("Yes") and not entry.get('following_text'):
+                        label_text = "Yes"
                     else:
                         label_text = (entry.get('following_text') or '').strip() or entry['label']
 
@@ -272,20 +259,10 @@ def extract_injury_form_data(docx_path):
 
     # Helper to collect displayed text from any FORMTEXT inputs between two section headers
     def extract_text(start_marker, end_marker):
-        start_idx_local = None
-        end_idx_local = None
-        for idx, text in enumerate(para_texts):
-            lowered = (text or '').lower()
-            if start_idx_local is None and start_marker in lowered:
-                start_idx_local = idx
-            elif start_idx_local is not None and end_marker and end_marker in lowered:
-                end_idx_local = idx
-                break
+        start_idx_local, end_idx_local = find_section_bounds(start_marker, end_marker)
         collected = []
         if start_idx_local is None:
             return ""
-        # Iterate paragraphs in range and extract displayed text from text inputs
-        paragraphs = list(root.findall('.//w:p', namespaces))
         # Always include the header paragraph to capture inline fields after the label
         start_p = start_idx_local
         end_p = len(paragraphs) if end_idx_local is None else end_idx_local
@@ -301,54 +278,88 @@ def extract_injury_form_data(docx_path):
                     continue
                 if ffdata.find('.//w:textInput', namespaces) is None:
                     continue
-                # Capture displayed text between separate and end for this text field
-                text_value = ""
-                found_separate = False
-                for j in range(i + 1, len(runs)):
-                    nxt = runs[j]
-                    if found_separate:
-                        t_el = nxt.find('.//w:t', namespaces)
-                        if t_el is not None and t_el.text:
-                            text_value += t_el.text
-                        end_char = nxt.find('.//w:fldChar[@w:fldCharType="end"]', namespaces)
-                        if end_char is not None:
-                            break
-                    separate_char = nxt.find('.//w:fldChar[@w:fldCharType="separate"]', namespaces)
-                    if separate_char is not None:
-                        found_separate = True
-                text_value = text_value.strip()
+                text_value = get_text_display_from_runs(runs, i)
                 if text_value:
                     collected.append(text_value)
         return '; '.join(collected)
 
 
-    injury_data['Name'] = extract_text('name', 'team')
-    injury_data['Team'] = extract_text('team', 'code')
-    injury_data['Code'] = extract_text('code', 'date of injury')
-    injury_data['Injury Date'] = extract_text('date of injury', 'date of return to full participation')
-    injury_data['Return Date'] = extract_text('date of return to full participation', 'injury location')
+    injury_data['NAME'] = extract_text('name', 'team')
+    injury_data['TEAM'] = extract_text('team', 'code')
+    injury_data['CODE'] = extract_text('code', 'date of injury')
+    injury_date = extract_text('date of injury', 'date of return to full participation')
+    return_date = extract_text('date of return to full participation', 'injury location')
+
+    # Normalize dates to ISO (YYYY-MM-DD). If INJURY_DATE can't be parsed, warn and skip the file.
+    def parse_date_to_iso(date_str):
+        s = (date_str or '').strip()
+        if not s:
+            return ''
+        # Already ISO?
+        try:
+            dt = datetime.strptime(s, '%Y-%m-%d')
+            return dt.strftime('%Y-%m-%d')
+        except Exception:
+            pass
+        # Try common day-first formats and a few others
+        candidates = [
+            '%d-%m-%Y', '%d/%m/%Y', '%d.%m.%Y', '%d %m %Y',
+            '%d %b %Y', '%d %B %Y',
+            '%Y/%m/%d', '%Y.%m.%d',
+            '%m/%d/%Y', '%m-%d-%Y',  # fallbacks if someone used US ordering
+        ]
+        for fmt in candidates:
+            try:
+                dt = datetime.strptime(s, fmt)
+                return dt.strftime('%Y-%m-%d')
+            except Exception:
+                continue
+        # Last resort: try extracting digits and reinterpreting dd-mm-yyyy like strings with mixed separators
+        m = re.match(r'^(\d{1,2})[\./\-](\d{1,2})[\./\-](\d{2,4})$', s)
+        if m:
+            d, mo, y = m.groups()
+            if len(y) == 2:
+                y = '20' + y
+            try:
+                dt = datetime(int(y), int(mo), int(d))
+                return dt.strftime('%Y-%m-%d')
+            except Exception:
+                pass
+        raise ValueError(f"Unrecognized date format: '{s}'")
+
+    try:
+        injury_iso = parse_date_to_iso(injury_date)
+        injury_data['INJURY_DATE'] = injury_iso
+    except Exception as e:
+        injury_data['INJURY_DATE'] = "Wrong date format"
+
+    try:
+        return_iso = parse_date_to_iso(return_date)
+        injury_data['RETURN_DATE'] = return_iso
+    except Exception as e:
+        injury_data['RETURN_DATE'] = "Wrong date format"
 
 
-    injury_data['Injury Location'] = extract_checkbox('injury location', 'injury side')
-    injury_data['Injury Side'] = extract_checkbox('injury side', 'injury type')
-    injury_data['Injury Type'] = extract_checkbox('injury type', 'training')
-    injury_data['Occurrence'] = extract_checkbox('training', 'injury mechanism')
-    injury_data['Overuse/Trauma'] = extract_checkbox('overuse or trauma', 'onset', only_one=True)
-    injury_data['Onset'] = extract_checkbox('gradual or sudden', 'contact', only_one=True)
-    injury_data['Contact'] = extract_checkbox('contact', 'running/sprinting', only_one=True)
-    injury_data['Action'] = extract_checkbox('indirect contact', 'injury mechanism')
-    injury_data['Re-injury'] = extract_checkbox('re-injury', 'referee', only_one=True)
-    injury_data['Referee Sanction'] = extract_checkbox('referee', 'diagnostic exam')
-    injury_data['Diagnostic Examination'] = extract_checkbox('diagnostic exam', 'diagnosis', only_one=True)
-    injury_data['Surgery'] = extract_checkbox('surgery', 'menstrual phase', only_one=True)
-    injury_data['Menstrual Phase'] = extract_checkbox('menstrual phase', 'oral contraceptives', only_one=True)
-    injury_data['Oral Contraceptives'] = extract_checkbox('oral contraceptives', 'hormonal contraceptives', only_one=True)
-    injury_data['Hormonal Contraceptives'] = extract_checkbox('hormonal contraceptives', 'other information', only_one=True)
+    injury_data['INJURY_LOCATION'] = extract_checkbox('injury location', 'injury side')
+    injury_data['INJURY_SIDE'] = extract_checkbox('injury side', 'injury type')
+    injury_data['INJURY_TYPE'] = extract_checkbox('injury type', 'training')
+    injury_data['OCCURRENCE'] = extract_checkbox('training', 'injury mechanism')
+    injury_data['OVERUSE_TRAUMA'] = extract_checkbox('overuse or trauma', 'onset', only_one=True)
+    injury_data['ONSET'] = extract_checkbox('gradual or sudden', 'contact', only_one=True)
+    injury_data['CONTACT'] = extract_checkbox('contact', 'running/sprinting', only_one=True)
+    injury_data['ACTION'] = extract_checkbox('indirect contact', 'injury mechanism')
+    injury_data['RE_INJURY'] = extract_checkbox('re-injury', 'referee', only_one=True)
+    injury_data['REFEREE_SANCTION'] = extract_checkbox('referee', 'diagnostic exam')
+    injury_data['DIAGNOSTIC_EXAMINATION'] = extract_checkbox('diagnostic exam', 'diagnosis')
+    injury_data['SURGERY'] = extract_checkbox('surgery', 'menstrual phase', only_one=True)
+    injury_data['MENSTRUAL_PHASE'] = extract_checkbox('menstrual phase', 'oral contraceptives', only_one=True)
+    injury_data['ORAL_CONTRACEPTIVES'] = extract_checkbox('oral contraceptives', 'hormonal contraceptives', only_one=True)
+    injury_data['HORMONAL_CONTRACEPTIVES'] = extract_checkbox('hormonal contraceptives', 'other information', only_one=True)
     
     # Action description and other comments as free-text inputs
-    injury_data['Action Description'] = extract_text('player action', 'other information')
-    injury_data['Diagnosis'] = extract_text('diagnosis', 'surgery')
-    injury_data['Other Comments'] = extract_text('other comments', None)
+    injury_data['ACTION_DESCRIPTION'] = extract_text('player action', 'other information')
+    injury_data['DIAGNOSIS'] = extract_text('diagnosis', 'surgery')
+    injury_data['OTHER_COMMENTS'] = extract_text('other comments', None)
 
     return injury_data
 
