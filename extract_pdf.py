@@ -284,7 +284,7 @@ def extract_info_from_pdf(pdf_path):
     injury_data["INJURY_SIDE"] = ", ".join(sides)
 
     #INJURY_TYPE
-    injury_types = get_checkbox_array(23, 40)
+    injury_types = get_checkbox_array(23, 41)
     if checkboxes[str(41)]:
         if text_info["other_injury"] != "":
             injury_types.append(text_info["other_injury"])

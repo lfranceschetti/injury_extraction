@@ -222,7 +222,7 @@ def extract_info_from_word(docx_path):
                             label_text = (entry.get('following_text') or '').strip()
                         else:
                             label_text = "Other injury"
-                    elif entry["label"] and entry["label"].strip().startswith("Other"):
+                    elif entry["label"] and entry["label"].strip().startswith("Other (specify)"):
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
                             label_text = (entry.get('following_text') or '').strip()
                         else:
