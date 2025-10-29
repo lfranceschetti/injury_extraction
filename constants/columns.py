@@ -24,5 +24,52 @@ column_names = [
         "OTHER_COMMENTS"
 ]
 
-row = {name: "" for name in column_names}
 
+column_names_new = [
+    "FILENAME",
+    "FORM_TYPE",
+    "NAME",
+    "TEAM",
+    "INJURY_DATE",
+    "RETURN_DATE",
+    "INJURY_LOCATION",
+    "INJURY_SIDE",
+    "INJURY_SITE",
+    "TYPE",
+    "AFFECTED_ORGAN",
+    "INJURY_CLASSIFICATION",
+    "ACL_GRADING",
+    "MCL_GRADING",
+    "OCCURRENCE_ONSET_TYPE",
+    "OCCURRENCE_MATCH_MINUTE",
+    "OCCURRENCE_CONTEXT",
+    "OVERUSE_TRAUMA",
+    "ONSET",
+    "HEADER_DUEL",
+    "CONTACT",
+    "CONTACT_POINT",
+    "ACTION",
+    "ACTION_DESCRIPTION",
+    "RECURRENCE",
+    "PREVIOUS_RETURN_DATE",
+    "PREVIOUS_CONTRALATERAL_INJURY",
+    "PREVIOUS_CONTRALATERAL_INURY_RETURN_DATE",
+    "REFEREE_SANCTION",
+    "DIAGNOSTIC_EXAMINATION",
+    "DIAGNOSTIC_EXAMINATION_DATE",
+    "DIAGNOSIS",
+    "SURGERY",
+    "PLAYER_SUBSTITUTION",
+    "PLAYER_SUBSTITUTION_TIME",
+    "REVIEW_SYSTEM",
+    "CONCUSSION_DOMAINS",
+    "BRACING",
+    "ACL_REPAIR",
+    "MCL_REPAIR",
+    "ACL_MCL_REPAIR_SPECIFICATION",
+    "OTHER_COMMENTS",
+    "UPDATED_AT"
+]
+
+row = {name: "" for name in column_names}
+row_new = {name: "" for name in column_names_new}

@@ -74,6 +74,7 @@ if __name__ == "__main__":
                 continue
             # store path relative to women/ to drop the 'women/' prefix
             injury_data["FILENAME"] = str(f.relative_to(women_dir)) if f.is_relative_to(women_dir) else str(f)
+            
             injury_data["SEX"] = "Female"
             rows.append(injury_data)
 

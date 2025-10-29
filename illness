@@ -1,0 +1,3386 @@
+<?xml version="1.0" ?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:body>
+    <w:p w14:paraId="0E4F87CD" w14:textId="47687988" w:rsidR="000E5E71" w:rsidRDefault="000E5E71" w:rsidP="00C959FC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
+          <w:sz w:val="2"/>
+          <w:szCs w:val="2"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="1352C0C3" w14:textId="77777777" w:rsidR="005054D4" w:rsidRPr="00C959FC" w:rsidRDefault="005054D4" w:rsidP="005054D4">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
+          <w:sz w:val="2"/>
+          <w:szCs w:val="2"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="10203" w:type="dxa"/>
+        <w:jc w:val="center"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="15182C"/>
+          <w:left w:val="single" w:sz="12" w:space="0" w:color="15182C"/>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="15182C"/>
+          <w:right w:val="single" w:sz="12" w:space="0" w:color="15182C"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+        </w:tblBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblCellMar>
+          <w:top w:w="85" w:type="dxa"/>
+          <w:left w:w="85" w:type="dxa"/>
+          <w:right w:w="85" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="01E0" w:firstRow="1" w:lastRow="1" w:firstColumn="1" w:lastColumn="1" w:noHBand="0" w:noVBand="0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3354"/>
+        <w:gridCol w:w="1746"/>
+        <w:gridCol w:w="2550"/>
+        <w:gridCol w:w="2553"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00776AB8" w:rsidRPr="00130071" w14:paraId="4CC41061" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="10203" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="15182C"/>
+          </w:tcPr>
+          <w:p w14:paraId="2F5436B8" w14:textId="560CA559" w:rsidR="0040476C" w:rsidRPr="00130071" w:rsidRDefault="0040476C" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rStyle w:val="Strong"/>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rStyle w:val="Strong"/>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="FFFFFF" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Player details and dates</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="009815ED" w:rsidRPr="00130071" w14:paraId="2B32ACAF" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3354" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="50E2A330" w14:textId="7BA985E2" w:rsidR="00FB698E" w:rsidRPr="00130071" w:rsidRDefault="00FB698E" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Player Name: </w:t>
+            </w:r>
+            <w:r w:rsidR="006B202F" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Text3"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="100"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:bookmarkStart w:id="0" w:name="Text3"/>
+            <w:r w:rsidR="006B202F" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidR="006B202F" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidR="006B202F" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Test_NAME</w:t>
+            </w:r>
+            <w:r w:rsidR="006B202F" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="0"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6849" w:type="dxa"/>
+            <w:gridSpan w:val="3"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="1A78E695" w14:textId="1D1050EF" w:rsidR="00FB698E" w:rsidRPr="00130071" w:rsidRDefault="00FB698E" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Date of </w:t>
+            </w:r>
+            <w:r w:rsidR="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>illness</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val=""/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="100"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>23.05.2024</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00CD2F5E" w:rsidRPr="00130071" w14:paraId="3D9CBE14" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3354" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="52178526" w14:textId="2CBF21BF" w:rsidR="00FB698E" w:rsidRPr="00130071" w:rsidRDefault="00FB698E" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6849" w:type="dxa"/>
+            <w:gridSpan w:val="3"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="6B5BD8E5" w14:textId="438D5DB1" w:rsidR="00FB698E" w:rsidRPr="00130071" w:rsidRDefault="00FB698E" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Date of return to full participation: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val=""/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="100"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>26-08-2025</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t xml:space="preserve">(Send </w:t>
+            </w:r>
+            <w:r w:rsidR="00CB56FE" w:rsidRPr="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>illness</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> card even if player is still in rehabilitation)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00CD2F5E" w:rsidRPr="00130071" w14:paraId="2670C8B0" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="10203" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="15182C"/>
+          </w:tcPr>
+          <w:p w14:paraId="4134ECE4" w14:textId="0354D6E2" w:rsidR="0040476C" w:rsidRPr="00130071" w:rsidRDefault="006A5999" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:bCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rStyle w:val="Strong"/>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="FFFFFF" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Type of illness</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="1" w:name="Check1"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="462A835D" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="174BF934" w14:textId="752B338C" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check1"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidR="00463DA7" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="1"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Infection in airways</w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:i/>
+                <w:iCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> (incl. influenza, common cold)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="2" w:name="Check4"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="4FCFC3F4" w14:textId="1B7D2819" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check4"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="2"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Stomach pain, diarrhoea or bowl problems</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="3" w:name="Check2"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="766EC3A2" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="70B9F984" w14:textId="7A6C7411" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check2"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="3"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Infection in other organs/body parts</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="4" w:name="Check5"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="67FE5768" w14:textId="07610D85" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check5"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidR="00463DA7" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="4"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Headache, migraine, or nausea</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="5" w:name="Check3"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="532BD874" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="5DBCBF87" w14:textId="78CB038F" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check3"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="5"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Asthma or allergies</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="6" w:name="Check11"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="125424E0" w14:textId="5E4D24F5" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check11"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidR="00001160" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="6"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Unexplained fatigue, malaise or fever</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="47A55A84" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="10203" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="024290C7" w14:textId="4498AF18" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check11"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidR="00463DA7" w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Othe</w:t>
+            </w:r>
+            <w:r w:rsidR="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">r: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val=""/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="1000"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:noProof/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Sickness</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="12E4321A" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="10203" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="15182C"/>
+          </w:tcPr>
+          <w:p w14:paraId="3E4C5EF8" w14:textId="26A6206D" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="FFFFFF" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>If other illness, please select affected organ system</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="4955670A" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="063B029D" w14:textId="5C5E272E" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check21"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Respiratory</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="20DFEB5F" w14:textId="008FFF87" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check29"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Dermatological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="7" w:name="Check22"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="5C9D484F" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="5837920D" w14:textId="5C9D7764" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check22"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="7"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Cardiovascular</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="8" w:name="Check30"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="66EAE698" w14:textId="5972893F" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check30"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="8"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Neurological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="9" w:name="Check23"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="14BC1B92" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="6EA17F97" w14:textId="41C34A94" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check23"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="9"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Renal/urogenital/gynaecological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="10" w:name="Check31"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="44A8A483" w14:textId="3151804C" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check31"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="10"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Psychiatric and behavioural</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="11" w:name="Check24"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="5E9A7347" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="6681E287" w14:textId="713B2DA7" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check24"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="11"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Metabolic/endocrinological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="12" w:name="Check27"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="1FDC3999" w14:textId="45C014B6" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check27"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="12"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Ophthalmic/otorhinolaryngological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="13" w:name="Check25"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="377E3A31" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="5D88BEFF" w14:textId="697CFBFF" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check25"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="13"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Haematological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="14" w:name="Check28"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="62141533" w14:textId="187B5BF4" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check28"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="14"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Dental</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkStart w:id="15" w:name="Check34"/>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="4CC8439E" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="53577107" w14:textId="3E527E97" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check34"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="15"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Rheumatological/connective tissue disorder</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:bookmarkStart w:id="16" w:name="Check35"/>
+        <w:bookmarkStart w:id="17" w:name="Check33"/>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="5C97F614" w14:textId="1087BA25" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check35"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="16"/>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Environmental (including heat/altitude illness</w:t>
+            </w:r>
+            <w:bookmarkEnd w:id="17"/>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="7BA35B2C" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="6E442392" w14:textId="1B66135B" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check32"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cstheme="minorHAnsi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Immunological</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="FFFFFF" w:themeColor="text1"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="77AB247A" w14:textId="669974B0" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check22"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Other</w:t>
+            </w:r>
+            <w:r w:rsidR="00CB56FE">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Text3"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="100"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>TEST</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="7C0BA0CD" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:tblPrEx>
+          <w:tblBorders>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+          <w:tblCellMar>
+            <w:bottom w:w="85" w:type="dxa"/>
+          </w:tblCellMar>
+        </w:tblPrEx>
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="10203" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="15182C"/>
+          </w:tcPr>
+          <w:p w14:paraId="1244FF87" w14:textId="77777777" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:bCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rStyle w:val="Strong"/>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:bCs w:val="0"/>
+                <w:color w:val="FFFFFF" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Other information</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="409E3E8E" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:tblPrEx>
+          <w:tblBorders>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+          <w:tblCellMar>
+            <w:bottom w:w="85" w:type="dxa"/>
+          </w:tblCellMar>
+        </w:tblPrEx>
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="6524D29B" w14:textId="1B652019" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Was this a recurrence?</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2550" w:type="dxa"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="50B060FF" w14:textId="3A237273" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check6"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> No</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2553" w:type="dxa"/>
+            <w:tcBorders>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="1985E491" w14:textId="47578E4D" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check6"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Unknown</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="78C8F4A0" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:tblPrEx>
+          <w:tblBorders>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+          <w:tblCellMar>
+            <w:bottom w:w="85" w:type="dxa"/>
+          </w:tblCellMar>
+        </w:tblPrEx>
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="11D2AA0D" w14:textId="77777777" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="59D26DBE" w14:textId="2D5CB561" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Check12"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:checkBox>
+                    <w:sizeAuto/>
+                    <w:default w:val="0"/>
+                    <w:checked/>
+                  </w:checkBox>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Yes </w:t>
+            </w:r>
+            <w:r w:rsidR="007A2F20" w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>(If known,</w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> date of return from previous </w:t>
+            </w:r>
+            <w:r w:rsidR="007A2F20" w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>illness</w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val="Text3"/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="100"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>23.04.2023</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="322B593F" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:tblPrEx>
+          <w:tblBorders>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+          <w:tblCellMar>
+            <w:bottom w:w="85" w:type="dxa"/>
+          </w:tblCellMar>
+        </w:tblPrEx>
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="8" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="7D3F3A9E" w14:textId="1EA27CC4" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Diagnosis </w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="00225924">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>S</w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:i/>
+                <w:iCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>pecify results of examination)</w:t>
+            </w:r>
+            <w:r w:rsidRPr="007A2F20">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:bCs/>
+                <w:i/>
+                <w:iCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>:</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5103" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="15182C"/>
+              <w:bottom w:val="single" w:sz="8" w:space="0" w:color="002060"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="7DB8B602" w14:textId="2B7B2887" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:color w:val="15182C"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val=""/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="1000"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>Cold</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00130071" w:rsidRPr="00130071" w14:paraId="4745407D" w14:textId="77777777" w:rsidTr="00277D59">
+        <w:tblPrEx>
+          <w:tblBorders>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+          <w:tblCellMar>
+            <w:bottom w:w="85" w:type="dxa"/>
+          </w:tblCellMar>
+        </w:tblPrEx>
+        <w:trPr>
+          <w:trHeight w:val="283"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5100" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8" w:space="0" w:color="002060"/>
+              <w:left w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="1633E4CB" w14:textId="77777777" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:b/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Other comments: </w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5102" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8" w:space="0" w:color="002060"/>
+              <w:bottom w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+              <w:right w:val="single" w:sz="18" w:space="0" w:color="002060"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="text1"/>
+          </w:tcPr>
+          <w:p w14:paraId="5FDCF7F1" w14:textId="465401C7" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="begin">
+                <w:ffData>
+                  <w:name w:val=""/>
+                  <w:enabled/>
+                  <w:calcOnExit w:val="0"/>
+                  <w:textInput>
+                    <w:maxLength w:val="1000"/>
+                  </w:textInput>
+                </w:ffData>
+              </w:fldChar>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="separate"/>
+            </w:r>
+            <w:r w:rsidR="0035381E">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:noProof/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>No</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00130071">
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:fldChar w:fldCharType="end"/>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="3B20BB3B" w14:textId="77777777" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="71BBA8BD" w14:textId="77777777" w:rsidR="00130071" w:rsidRPr="00130071" w:rsidRDefault="00130071" w:rsidP="00277D59">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Segoe UI"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="13FCA254" w14:textId="77777777" w:rsidR="009547F7" w:rsidRDefault="009547F7" w:rsidP="00D36AD7">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="236C8387" w14:textId="77777777" w:rsidR="009547F7" w:rsidRPr="00B540A2" w:rsidRDefault="009547F7" w:rsidP="009547F7">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3AA51F92" w14:textId="77777777" w:rsidR="009547F7" w:rsidRPr="00B540A2" w:rsidRDefault="009547F7" w:rsidP="00D36AD7">
+      <w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:sectPr w:rsidR="009547F7" w:rsidRPr="00B540A2" w:rsidSect="000933F4">
+      <w:headerReference w:type="default" r:id="rId11"/>
+      <w:footerReference w:type="even" r:id="rId12"/>
+      <w:footerReference w:type="default" r:id="rId13"/>
+      <w:footerReference w:type="first" r:id="rId14"/>
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="1701" w:right="720" w:bottom="720" w:left="720" w:header="567" w:footer="510" w:gutter="0"/>
+      <w:pgNumType w:start="1"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
