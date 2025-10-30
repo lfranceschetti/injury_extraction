@@ -7,7 +7,7 @@ from pdf2image import convert_from_path
 import pytesseract, cv2, numpy as np
 import os
 from PIL import Image
-from constants.checkbox_map import checkbox_map
+from constants.checkbox_map import checkbox_map, checkbox_map_by_type
 from constants.columns import row
 from helpers.iso import parse_date_to_iso
 
@@ -24,9 +24,14 @@ def get_text_info(pdf_path: str, split_rules: list) -> dict:
 
         # Find absolute start index
         abs_start = full_text.find(start_pat)
+        if "second_start" in rule:
+            #Start from the second time the start pattern is found
+            abs_start = full_text.find(start_pat, abs_start + len(start_pat))
         if abs_start == -1:
             out[rule["key"]] = ""
             continue
+
+    
 
         # Start searching right after the start pattern
         cursor = abs_start + len(start_pat)
@@ -52,20 +57,24 @@ def get_text_info(pdf_path: str, split_rules: list) -> dict:
     return out
 
 
-def detect_checkboxes(img, use_hierarchy=False):
-    gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+def detect_checkboxes(img, use_hierarchy=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
+    # Crop the image if needed
+    h, w = img.shape[:2]
+    img_cropped = img[crop_top:h-crop_bottom, crop_left:w-crop_right]
+    
+    gray = cv2.cvtColor(img_cropped, cv2.COLOR_RGB2GRAY)
     blur = cv2.GaussianBlur(gray, (3,3), 0)
-    bw = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
-                               cv2.THRESH_BINARY_INV, 31, 10)
+    # Replace adaptive threshold with OTSU (automatic global threshold)
+    _, bw = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 
     mode = cv2.RETR_TREE if use_hierarchy else cv2.RETR_EXTERNAL
-    cnts, hierarchy = cv2.findContours(bw, mode, cv2.CHAIN_APPROX_SIMPLE)
+    cnts, _ = cv2.findContours(bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
     boxes = []
     for i, c in enumerate(cnts):
         x,y,w,h = cv2.boundingRect(c)
-        if w == 0 or h == 0:
-            continue
+        # if w == 0 or h == 0:
+        #     continue
         aspect_ratio = w/float(h)
         # Stricter size and aspect to ignore small round letters
         if not (20 <= w <= 60 and 20 <= h <= 60 and 0.92 <= aspect_ratio <= 1.08):
@@ -104,11 +113,14 @@ def detect_checkboxes(img, use_hierarchy=False):
         inner = roi[border:h-border, border:w-border] if (h-2*border) > 0 and (w-2*border) > 0 else roi
         fill = inner.mean()/255.0  # 0..1
 
-        boxes.append({"bbox": (x,y,w,h), "fill_ratio": fill})
+        # Adjust coordinates back to original image space
+        boxes.append({"bbox": (x+crop_left, y+crop_top, w, h), "fill_ratio": fill})
 
     # Heuristic: filled if inside mean > threshold
     for b in boxes:
-        b["checked"] = b["fill_ratio"] > 0.25
+        b["checked"] = b["fill_ratio"] > 0.2
+
+    boxes = remove_duplicate_boxes(boxes)
 
     return boxes
 
@@ -162,7 +174,7 @@ def number_boxes_reading_order(boxes, row_merge_px=25):
     return boxes
 
 
-def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug"):
+def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
     imgs = pdf_to_images(pdf_path)
     box_map = {}
     if save_debug:
@@ -172,9 +184,8 @@ def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug"):
     cumulative_box_number = 0
     
     for idx, img in enumerate(imgs):
-        boxes = detect_checkboxes(img, use_hierarchy=False)
+        boxes = detect_checkboxes(img, use_hierarchy=False, crop_top=crop_top, crop_bottom=crop_bottom, crop_left=crop_left, crop_right=crop_right)
 
-        print(f"Page {idx+1} - NUMBER OF BOXES: {len(boxes)}")
         
         # Number boxes in reading order
         number_boxes_reading_order(boxes)
@@ -222,3 +233,44 @@ def save_debug_visualization_with_labels(img, boxes, out_path):
             text_org = (x, max(0, y-5))
             cv2.putText(vis, number_text, text_org, cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2, cv2.LINE_AA)
     cv2.imwrite(out_path, cv2.cvtColor(vis, cv2.COLOR_RGB2BGR))
+
+
+def remove_duplicate_boxes(boxes, iou_threshold=0.5):
+    """Remove duplicate/overlapping boxes using Non-Maximum Suppression approach"""
+    if not boxes:
+        return boxes
+    
+    # Sort by position (top-to-bottom, left-to-right) to maintain reading order
+    # This ensures deduplication preserves spatial ordering
+    boxes_sorted = sorted(boxes, key=lambda b: (b["bbox"][1], b["bbox"][0]))  # (y, x)
+    
+    keep = []
+    while boxes_sorted:
+        current = boxes_sorted.pop(0)
+        keep.append(current)
+        
+        # Remove boxes that overlap significantly with current
+        boxes_sorted = [b for b in boxes_sorted if calculate_iou(current["bbox"], b["bbox"]) < iou_threshold]
+    
+    return keep
+
+def calculate_iou(box1, box2):
+    """Calculate Intersection over Union (IoU) of two bounding boxes"""
+    x1, y1, w1, h1 = box1
+    x2, y2, w2, h2 = box2
+    
+    # Calculate intersection
+    x_left = max(x1, x2)
+    y_top = max(y1, y2)
+    x_right = min(x1 + w1, x2 + w2)
+    y_bottom = min(y1 + h1, y2 + h2)
+    
+    if x_right < x_left or y_bottom < y_top:
+        return 0.0
+    
+    intersection = (x_right - x_left) * (y_bottom - y_top)
+    area1 = w1 * h1
+    area2 = w2 * h2
+    union = area1 + area2 - intersection
+    
+    return intersection / union if union > 0 else 0.0

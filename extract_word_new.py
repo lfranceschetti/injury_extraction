@@ -113,10 +113,11 @@ def extract_info_from_word(docx_path):
                         label_text = "Other"
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
                             acl_mcl_specs.append(entry.get('following_text').strip())
+                        
 
 
 
-                    elif label and label.startswith("Other") and not label.startswith("Other training") and not label.startswith("Other cup match"):
+                    elif label and label.startswith("Other") and not label.startswith("Other training") and not label.startswith("Other cup match") and not label.startswith("Other player action"):
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
                             label_text = (entry.get('following_text') or '').strip()
                         else:
@@ -203,28 +204,7 @@ def extract_info_from_word(docx_path):
 
     injury_data['INJURY_DATE'] = parse_date_to_iso(injury_date)
     injury_data['RETURN_DATE'] = parse_date_to_iso(return_date)
-
-
-    if form_type == "HEAD":
-        print("HEAD FORM TYPE")
        
-        # injury_data['HEADER_DUEL'] = extract_checkbox('Was the injury caused by a header duel?', "Was the injury caused by contact?")
-        # injury_data['CONTACT'] = extract_checkbox("Was the injury caused by contact?", "In case of player contact")
-        # contact_point1 = extract_checkbox("In case of player contact", "In case of object contact")
-        # contact_point2 = extract_checkbox("In case of object contact", "Circumstances")
-        # if contact_point1 and contact_point2:
-        #     injury_data['CONTACT_POINT'] = contact_point1 + " and " + contact_point2
-        # elif contact_point1:
-        #     injury_data['CONTACT_POINT'] = contact_point1
-        # elif contact_point2:
-        #     injury_data['CONTACT_POINT'] = contact_point2
-        # else:
-        #     injury_data['CONTACT_POINT'] = ""
-
-
-        # injury_data['ACTION_DESCRIPTION'] = extract_text("Injury mechanism", "Other information")
-
-        
 
 
     if form_type == "INJURY":
@@ -264,6 +244,7 @@ def extract_info_from_word(docx_path):
     if form_type == "INJURY" or form_type == "KNEE" or form_type == "LOWER_EXTREMITIES":
         injury_data['CONTACT'] = extract_checkbox('Was the injury caused by contact?', num_paragraphs=3)
     if form_type == "HEAD":
+        injury_data['HEADER_DUEL'] = extract_checkbox('header duel?', num_paragraphs=2, only_one=True)
         injury_data['CONTACT'] = extract_checkbox('Was the injury caused by contact?', num_paragraphs=4)
         contact_point1 = extract_checkbox("In case of player contact", "In case of object contact")
         contact_point2 = extract_checkbox("In case of object contact", "Circumstances")
@@ -281,8 +262,11 @@ def extract_info_from_word(docx_path):
         injury_data['REVIEW_SYSTEM'] = extract_checkbox("Did you use the medical review system to inform your pitch side decision?", num_paragraphs=3)
         injury_data['CONCUSSION_DOMAINS'] = extract_checkbox("In case of concussion", num_paragraphs=10)
 
-    
-    injury_data['REFEREE_SANCTION'] = extract_checkbox("sanction:", num_paragraphs=6)
+    if form_type == "HEAD":
+        injury_data['REFEREE_SANCTION'] = extract_checkbox("sanction (Only for sudden onset match injuries):", num_paragraphs=7)
+    else:
+        injury_data['REFEREE_SANCTION'] = extract_checkbox("sanction:", num_paragraphs=7)
+
     injury_data['ACTION'] = extract_checkbox("Circumstances and player", "Injury mechanism/player action")
     injury_data['ACTION_DESCRIPTION'] = extract_text("Injury mechanism/player action", num_paragraphs=2)
 
@@ -296,7 +280,6 @@ def extract_info_from_word(docx_path):
     if prv_cntrl_injury_return_date:
         injury_data['PREVIOUS_CONTRALATERAL_INURY_RETURN_DATE'] = prv_cntrl_injury_return_date
 
-  
     diagnostic_examination, diagnostic_dates = extract_checkbox("Diagnostic examination", num_paragraphs=7, give_additional_info=True)
     injury_data['DIAGNOSTIC_EXAMINATION'] = diagnostic_examination
     diagnostic_dates_string = ""
@@ -316,15 +299,10 @@ def extract_info_from_word(docx_path):
     mcl_repair, mcl_repair_spec = extract_checkbox("MCL repair", "Other comments", give_additional_info=True)
     injury_data['ACL_REPAIR'] = acl_repair
     injury_data['MCL_REPAIR'] = mcl_repair
-
-    specs = []
-    if acl_repair_spec:
-        specs.append(", ".join(acl_repair_spec))
-    if mcl_repair_spec:
-        specs.append(", ".join(mcl_repair_spec))
-    acl_mcl_specs_string = "\n".join(specs)
-
-    injury_data['ACL_MCL_REPAIR_SPECIFICATION'] = acl_mcl_specs_string
+    if acl_repair_spec and len(acl_repair_spec) > 0:
+        injury_data['ACL_REPAIR_SPECIFICATION'] = ", ".join(acl_repair_spec)
+    if mcl_repair_spec and len(mcl_repair_spec) > 0:
+        injury_data['MCL_REPAIR_SPECIFICATION'] = ", ".join(mcl_repair_spec)
 
 
     return injury_data
