@@ -166,20 +166,20 @@ def number_boxes_reading_order(boxes, row_merge_px=25, swap_map=None):
     ordered_copy = ordered.copy()
     
     # This is done to have the same order as in the word extraction
+    print("SWAP MAP: ", swap_map)
     if swap_map is not None:
         for dst_idx, src_idx in swap_map.items():
             ordered[dst_idx] = ordered_copy[src_idx]
-
 
     # Assign numbers 1..N in order
     for idx, b in enumerate(ordered, start=1):
         b["number"] = idx
 
-    
-    return boxes
+
+    return ordered
 
 
-def get_checkbox_info(pdf_path: str, save_debug=False, debug_dir="debug", swap_map=None, old_pdfs=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
+def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", swap_map=None, old_pdfs=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
     imgs = pdf_to_images(pdf_path)
     box_map = {}
     if save_debug:
@@ -193,7 +193,7 @@ def get_checkbox_info(pdf_path: str, save_debug=False, debug_dir="debug", swap_m
 
         
         # Number boxes in reading order
-        number_boxes_reading_order(boxes, swap_map=swap_map)
+        boxes = number_boxes_reading_order(boxes, swap_map=swap_map)
         
         # Renumber boxes to be cumulative across pages
         for box in boxes:

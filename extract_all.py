@@ -58,8 +58,17 @@ if __name__ == "__main__":
             if injury_data is None:
                 continue
             # store path relative to men/ to drop the 'men/' prefix
-            injury_data["FILENAME"] = str(f.relative_to(men_dir)) if f.is_relative_to(men_dir) else str(f)
+            file_name = str(f.relative_to(men_dir)) if f.is_relative_to(men_dir) else str(f)
+            injury_data["FILENAME"] = file_name
             injury_data["SEX"] = "Male"
+            
+            # Extract TEAM from filename for new format files
+            if injury_data.get("FILE_FORMAT") == "NEW":
+                injury_data["TEAM"] = file_name.split(",")[0] if len(file_name.split(",")) > 1 else "UNKNOWN"
+            
+            # Add UPDATED_AT timestamp
+            injury_data["UPDATED_AT"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
             rows.append(injury_data)
 
     # Then process women, interleaving docx/pdf by base FILENAME
@@ -73,8 +82,17 @@ if __name__ == "__main__":
             if injury_data is None:
                 continue
             # store path relative to women/ to drop the 'women/' prefix
-            injury_data["FILENAME"] = str(f.relative_to(women_dir)) if f.is_relative_to(women_dir) else str(f)
+            file_name = str(f.relative_to(women_dir)) if f.is_relative_to(women_dir) else str(f)
+            injury_data["FILENAME"] = file_name
             injury_data["SEX"] = "Female"
+            
+            # Extract TEAM from filename for new format files
+            if injury_data.get("FILE_FORMAT") == "NEW":
+                injury_data["TEAM"] = file_name.split(",")[0] if len(file_name.split(",")) > 1 else "UNKNOWN"
+            
+            # Add UPDATED_AT timestamp
+            injury_data["UPDATED_AT"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
             rows.append(injury_data)
 
     if not rows:

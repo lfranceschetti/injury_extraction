@@ -20,6 +20,7 @@ SPLIT_RULES = [
     {"key": "name", "start": "Name:", "end": "Team:"},
     {"key": "team", "start": "Team:", "end": "Code no:"},
     {"key": "code", "start": "Code no:", "end": "\n"},
+    {"key": "match", "start": "Match", "end": "(min. of injury)"},
     {"key": "injury_date", "start": "Date of injury:", "end": "Date of return"},
     {"key": "return_date", "start": " Date of return to full participation: ", "end": " (Send"},
     {"key": "other_injury", "start": "Other injury (please specify):", "end": "\n"},
@@ -94,18 +95,27 @@ def extract_info_from_pdf(pdf_path):
 
     #OCCURRENCE
     #add other injury type
-    occurrences = []
-    for i in range(42, 55):
-        if checkboxes[str(i)]:
-            if i == 43:
-                if text_info["match"] != "":
-                    occurrences.append("Match (min. of injury: " + text_info["match"] + ")")
-                else:
-                    occurrences.append("Match")
+    occurrences = get_checkbox_array(42, 45)
+    if len(occurrences) == 1:
+        occurrence = occurrences[0]
+        if "Match" in occurrence:
+            injury_data["OCCURRENCE_ONSET_TYPE"] = "Match"
+            if text_info["match"] != "":
+                injury_data["OCCURRENCE_MATCH_MINUTE"] = text_info["match"]
             else:
-                occurrences.append(checkbox_map[str(i)])
+                injury_data["OCCURRENCE_MATCH_MINUTE"] = "N/A"
+        else:
+            injury_data["OCCURRENCE_ONSET_TYPE"] = occurrence
+    elif len(occurrences) > 1:
+        injury_data["OCCURRENCE_ONSET_TYPE"] = "Too many answers"
+    
 
-    injury_data["OCCURRENCE"] = ", ".join(occurrences)
+    occurrence_context = get_checkbox_array(45, 55)
+    print("OCCURRENCE_CONTEXT: ", occurrence_context)
+    injury_data["OCCURRENCE_CONTEXT"] = ", ".join(occurrence_context)
+    print("CHECKBOX 53: ", checkboxes[str(53)])
+    print("CHECKBOX 54: ", checkboxes[str(54)])
+    
 
 
     #OVERUSE_TRAUMA

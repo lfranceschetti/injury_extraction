@@ -43,18 +43,23 @@ def extract_info_from_word(docx_path):
     
    
     # Helper to collect checked labels between two section headers
-    def extract_checkbox(start_marker, end_marker=None, only_one=False):
-        start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker)
+    def extract_checkbox(start_marker, end_marker=None, only_one=False, num_paragraphs=None, give_additional_info=False):
+        start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker, num_paragraphs)
         results = []
+        
+        #Hacky way to get additional information out of text fields that should go into other columns
+        match_minute = None
+        
         if start_idx_local is not None:
             for entry in checkbox_entries:
                 if entry['checked'] and entry['para_idx'] > start_idx_local and (end_idx_local is None or entry['para_idx'] < end_idx_local):
                     # Prefer the following text field content if present; otherwise use the checkbox label
                     if entry['label'] == "Match":
+                        label_text = "Match"
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
-                            label_text = "Match (min. of injury: " + entry.get('following_text') + ")"
+                            match_minute = entry.get('following_text').strip()
                         else:
-                            label_text = "Match"
+                            match_minute = "N/A"
 
                     elif entry["label"] and entry["label"].strip().startswith("Yes") and entry.get('following_text'):
                         label_text = "Yes"
@@ -81,14 +86,23 @@ def extract_info_from_word(docx_path):
                     if label_text:
                         results.append(label_text)
 
-        if only_one and len(results) == 1:
-            return results[0]
-        elif only_one and len(results) == 0:
-            return ""
+        final_string = ""
+        if len(results) == 0:
+            pass
+        elif only_one and len(results) == 1:
+            final_string = results[0]
         elif only_one and len(results) > 1:
-            return "Too many answers"
+            final_string = "Too many answers"
         else:
-            return ", ".join(results)
+            final_string = ", ".join(results)
+
+        if give_additional_info:
+            additional_info = None
+            if match_minute:
+                additional_info = match_minute
+            return final_string, additional_info
+        else:
+            return final_string
                     
 
     # Helper to collect displayed text from any FORMTEXT inputs between two section headers
@@ -142,7 +156,18 @@ def extract_info_from_word(docx_path):
     injury_data['INJURY_LOCATION'] = extract_checkbox('injury location', 'injury side')
     injury_data['INJURY_SIDE'] = extract_checkbox('injury side', 'injury type')
     injury_data['TYPE'] = extract_checkbox('injury type', 'training')
-    injury_data['OCCURRENCE'] = extract_checkbox('training', 'injury mechanism')
+    
+    # Extract occurrence fields using the same logic as extract_word_new.py
+    # For old format, try to extract onset type from 'training' to 'overuse or trauma'
+    # This should capture Training, Match, etc.
+    occurence_onset_type, occurence_match_minute = extract_checkbox('When did the injury occur?', '(gradual onset injury)', give_additional_info=True, only_one=True)
+    
+    injury_data['OCCURRENCE_ONSET_TYPE'] = occurence_onset_type
+    injury_data['OCCURRENCE_MATCH_MINUTE'] = occurence_match_minute
+    # For old format, the context might be mixed with onset type in the same section
+    # Try to extract from a point that would capture context options
+    # If 'N/A' marker doesn't exist in old format, this will return empty which is acceptable
+    injury_data['OCCURRENCE_CONTEXT'] = extract_checkbox('N/A', 'injury mechanism')
     injury_data['OVERUSE_TRAUMA'] = extract_checkbox('overuse or trauma', 'onset', only_one=True)
     injury_data['ONSET'] = extract_checkbox('gradual or sudden', 'contact', only_one=True)
     injury_data['CONTACT'] = extract_checkbox('contact', 'running/sprinting', only_one=True)
