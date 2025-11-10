@@ -49,6 +49,7 @@ def extract_info_from_word(docx_path):
         
         #Hacky way to get additional information out of text fields that should go into other columns
         match_minute = None
+        recurrence_return_date = None
         
         if start_idx_local is not None:
             for entry in checkbox_entries:
@@ -61,6 +62,13 @@ def extract_info_from_word(docx_path):
                         else:
                             match_minute = "N/A"
 
+                    # Handle recurrence date extraction
+                    elif entry["label"] and entry["label"].strip().startswith("Yes (give date of return"):
+                        label_text = "Yes"
+                        if entry.get('following_text') is not None and entry.get('following_text') != '':
+                            recurrence_return_date = parse_date_to_iso(entry.get('following_text').strip())
+                        else:
+                            recurrence_return_date = "N/A"
                     elif entry["label"] and entry["label"].strip().startswith("Yes") and entry.get('following_text'):
                         label_text = "Yes"
                         if entry.get('following_text') != '':
@@ -100,6 +108,8 @@ def extract_info_from_word(docx_path):
             additional_info = None
             if match_minute:
                 additional_info = match_minute
+            if recurrence_return_date:
+                additional_info = recurrence_return_date
             return final_string, additional_info
         else:
             return final_string
@@ -168,11 +178,15 @@ def extract_info_from_word(docx_path):
     # Try to extract from a point that would capture context options
     # If 'N/A' marker doesn't exist in old format, this will return empty which is acceptable
     injury_data['OCCURRENCE_CONTEXT'] = extract_checkbox('N/A', 'injury mechanism')
-    injury_data['OVERUSE_TRAUMA'] = extract_checkbox('overuse or trauma', 'onset', only_one=True)
+    injury_data['OVERUSE_TRAUMA'] = extract_checkbox('overuse or trauma', 'onset')
     injury_data['ONSET'] = extract_checkbox('gradual or sudden', 'contact', only_one=True)
     injury_data['CONTACT'] = extract_checkbox('contact', 'running/sprinting', only_one=True)
     injury_data['ACTION'] = extract_checkbox('indirect contact', 'injury mechanism')
-    injury_data['RECURRENCE'] = extract_checkbox('re-injury', 'referee', only_one=True)
+    # Extract recurrence using the same logic as extract_word_new.py
+    recurrence, recurrence_return_date = extract_checkbox('re-injury', 'referee', give_additional_info=True, only_one=True)
+    injury_data['RECURRENCE'] = recurrence
+    if recurrence_return_date and recurrence != "Too many answers":
+        injury_data['PREVIOUS_RETURN_DATE'] = recurrence_return_date
     injury_data['REFEREE_SANCTION'] = extract_checkbox('referee', 'diagnostic exam')
     injury_data['DIAGNOSTIC_EXAMINATION'] = extract_checkbox('diagnostic exam', 'diagnosis')
     injury_data['SURGERY'] = extract_checkbox('surgery', 'menstrual phase', only_one=True)

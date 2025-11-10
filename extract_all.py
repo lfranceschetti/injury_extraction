@@ -63,7 +63,7 @@ if __name__ == "__main__":
             injury_data["SEX"] = "Male"
             
             # Extract TEAM from filename for new format files
-            if injury_data.get("FILE_FORMAT") == "NEW":
+            if injury_data.get("FORM_TYPE") != "OLD":
                 injury_data["TEAM"] = file_name.split(",")[0] if len(file_name.split(",")) > 1 else "UNKNOWN"
             
             # Add UPDATED_AT timestamp
@@ -87,7 +87,7 @@ if __name__ == "__main__":
             injury_data["SEX"] = "Female"
             
             # Extract TEAM from filename for new format files
-            if injury_data.get("FILE_FORMAT") == "NEW":
+            if injury_data.get("FORM_TYPE") != "OLD":
                 injury_data["TEAM"] = file_name.split(",")[0] if len(file_name.split(",")) > 1 else "UNKNOWN"
             
             # Add UPDATED_AT timestamp
@@ -99,8 +99,8 @@ if __name__ == "__main__":
         print("No .docx or .pdf files found under 'men' or 'women'.")
     else:
         df = pd.DataFrame(rows)
-        # Ensure FILENAME, SEX, and FILE_FORMAT are at the beginning
-        priority_cols = ["FILENAME", "SEX", "FILE_FORMAT"]
+        # Ensure FILENAME, SEX, and FORM_TYPE are at the beginning
+        priority_cols = ["FILENAME", "SEX", "FORM_TYPE"]
         ordered_cols = priority_cols + [c for c in df.columns if c not in priority_cols]
         df = df[ordered_cols]
         output_excel = base_dir / "injury_data.xlsx"

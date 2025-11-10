@@ -166,7 +166,6 @@ def number_boxes_reading_order(boxes, row_merge_px=25, swap_map=None):
     ordered_copy = ordered.copy()
     
     # This is done to have the same order as in the word extraction
-    print("SWAP MAP: ", swap_map)
     if swap_map is not None:
         for dst_idx, src_idx in swap_map.items():
             ordered[dst_idx] = ordered_copy[src_idx]
@@ -218,7 +217,6 @@ def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", swap_ma
         for box in boxes:
             box_map[str(box["number"])] = box["checked"]
         
-    print(f"Total checkboxes across all pages: {cumulative_box_number}")
     return box_map
 
 def pdf_to_images(pdf_path: str, dpi=300):

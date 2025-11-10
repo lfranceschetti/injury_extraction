@@ -8,7 +8,7 @@ from constants.columns import row_new
 from helpers.iso import parse_date_to_iso
 from helpers.word import extract_xml_from_docx, get_text_display_from_runs, find_section_bounds, extract_form_fields
 from helpers.utils import get_form_type
-from helpers.extract_word import extract_info_from_word as extract_info_from_word_old
+from helpers.extract_word_old import extract_info_from_word as extract_info_from_word_old
 
 
 
@@ -40,8 +40,8 @@ def extract_info_from_word(docx_path):
     if is_old_format(docx_path):
         # Use the old extraction function
         injury_data = extract_info_from_word_old(docx_path)
-        # Add FILE_FORMAT column
-        injury_data["FILE_FORMAT"] = "OLD"
+        # Set FORM_TYPE to "OLD" for old format files
+        injury_data["FORM_TYPE"] = "OLD"
         return injury_data
     
     namespaces = {
@@ -68,8 +68,6 @@ def extract_info_from_word(docx_path):
     # Helper to collect checked labels between two section headers
     def extract_checkbox(start_marker, end_marker=None, only_one=False, num_paragraphs=None, give_additional_info=False):
         start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker, num_paragraphs)
-        print("start_idx_local: ", start_idx_local)
-        print("end_idx_local: ", end_idx_local)
         results = []
 
         #Hacky way to get additional information out of text fields that should go into other columns
@@ -81,8 +79,6 @@ def extract_info_from_word(docx_path):
 
         if start_idx_local is not None:
             for entry in checkbox_entries:
-                if entry['para_idx'] > start_idx_local and (end_idx_local is None or entry['para_idx'] < end_idx_local):
-                    print("entry: ", entry)
                 
                 if entry['checked'] and entry['para_idx'] > start_idx_local and (end_idx_local is None or entry['para_idx'] < end_idx_local):
 
@@ -158,7 +154,6 @@ def extract_info_from_word(docx_path):
                         results.append(label_text)
 
         final_string = ""
-        print("RESULTS: ", results)
         if len(results) == 0:
             pass
         elif only_one and len(results) == 1:
@@ -214,9 +209,6 @@ def extract_info_from_word(docx_path):
         return '; '.join(collected)
 
 
-    # print("para_texts: ", para_texts)
-    # print("text_fields: ", text_fields)
-    # print("checkbox_entries: ", checkbox_entries)
 
     injury_data = row_new.copy()
     form_type = get_form_type("\n".join(para_texts))
@@ -224,7 +216,6 @@ def extract_info_from_word(docx_path):
     
 
     injury_data['NAME'] = extract_text('name', 'date')
-    print("NAME: ", injury_data['NAME'])
     injury_date = extract_text('date of', 'date of return to full participation')
     return_date = extract_text('date of return to full participation', 'send', only_one=True)
    
@@ -235,7 +226,6 @@ def extract_info_from_word(docx_path):
 
 
     if form_type == "INJURY":
-        print("INJURY FORM TYPE")
         injury_data['INJURY_LOCATION'] = extract_checkbox('injury location', 'injury side')
         injury_data['INJURY_SIDE'] = extract_checkbox('injury side', 'injury type')
         injury_data['TYPE'] = extract_checkbox('injury type', 'when did the injury occur?')
@@ -331,9 +321,6 @@ def extract_info_from_word(docx_path):
         injury_data['ACL_REPAIR_SPECIFICATION'] = ", ".join(acl_repair_spec)
     if mcl_repair_spec and len(mcl_repair_spec) > 0:
         injury_data['MCL_REPAIR_SPECIFICATION'] = ", ".join(mcl_repair_spec)
-
-    # Add FILE_FORMAT column for new format
-    injury_data["FILE_FORMAT"] = "NEW"
 
     return injury_data
 

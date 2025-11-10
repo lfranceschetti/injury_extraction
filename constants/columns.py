@@ -1,6 +1,6 @@
 column_names = [
         "FILENAME",
-        "FILE_FORMAT",
+        "FORM_TYPE",
         "NAME",
         "TEAM",
         "CODE",
@@ -32,11 +32,11 @@ column_names = [
 
 column_names_new = [
     "FILENAME",
-    "FILE_FORMAT",
     "UPDATED_AT",
     "FORM_TYPE",
     "NAME",
     "TEAM",
+    "CODE",
     "INJURY_DATE",
     "RETURN_DATE",
     "INJURY_LOCATION",
@@ -75,10 +75,10 @@ column_names_new = [
     "MCL_REPAIR",
     "ACL_REPAIR_SPECIFICATION",
     "MCL_REPAIR_SPECIFICATION",
-    "OTHER_COMMENTS",
     "MENSTRUAL_PHASE",
     "ORAL_CONTRACEPTIVES",
     "HORMONAL_CONTRACEPTIVES",
+    "OTHER_COMMENTS",
     "UPDATED_AT"
 ]
 

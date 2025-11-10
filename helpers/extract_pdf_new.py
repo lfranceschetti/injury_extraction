@@ -13,7 +13,7 @@ from constants.columns import row_new
 from helpers.iso import parse_date_to_iso
 from helpers.pdf import get_text_info, detect_checkboxes, number_boxes_reading_order, get_checkbox_info, pdf_to_images, save_debug_visualization_with_labels
 from helpers.utils import get_form_type
-from helpers.extract_pdf import extract_info_from_pdf as extract_info_from_pdf_old
+from helpers.extract_pdf_old import extract_info_from_pdf as extract_info_from_pdf_old
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
@@ -93,8 +93,8 @@ def extract_info_from_pdf(pdf_path):
     if is_old_format(pdf_path):
         # Use the old extraction function
         injury_data = extract_info_from_pdf_old(pdf_path)
-        # Add FILE_FORMAT column
-        injury_data["FILE_FORMAT"] = "OLD"
+        # Set FORM_TYPE to "OLD" for old format files
+        injury_data["FORM_TYPE"] = "OLD"
         return injury_data
 
     injury_data = row_new.copy()
@@ -105,12 +105,10 @@ def extract_info_from_pdf(pdf_path):
     form_type = get_form_type(full_text)
     injury_data['FORM_TYPE'] = form_type
 
-    print("FULL TEXT: ", repr(full_text))
 
     # Adjust these values to crop top/bottom/left/right (in pixels)
     # For 300 DPI: ~100px = 0.33 inches, ~200px = 0.67 inches
     checkboxes = get_checkbox_info(pdf_path, crop_top=400, crop_bottom=400, crop_left=0, crop_right=0, save_debug=True)
-    print("checkboxes: ", checkboxes)
 
     if form_type == "HEAD":
         split_rules = SPLIT_RULES + HEAD_SPLIT_RULES
@@ -126,7 +124,6 @@ def extract_info_from_pdf(pdf_path):
 
     text_info = get_text_info(pdf_path, split_rules)
 
-    print("text_info: ", text_info)
 
     injury_data["NAME"] = text_info["name"]
 
@@ -135,7 +132,6 @@ def extract_info_from_pdf(pdf_path):
 
     def get_checkbox_data(start, end, get_string=True, has_other=False, other_text="", only_one=False):
         array = [checkbox_map_by_type[form_type][str(i)] for i in range(start, end) if checkboxes[str(i)]]
-        print("ARRAY: ", array)
 
         if has_other and type(has_other) == int:
             if checkboxes[str(has_other)] == True:
@@ -223,7 +219,6 @@ def extract_info_from_pdf(pdf_path):
             examination_dates.append(parse_date_to_iso(text_info["mri_date"].replace("\n", "")))
       
 
-        print("EXAMINATION_DATES: ", repr(examination_dates))
         if examination_dates and len(examination_dates) > 0:
             injury_data["DIAGNOSTIC_EXAMINATION_DATE"] = ", ".join(examination_dates)
 
@@ -319,7 +314,6 @@ def extract_info_from_pdf(pdf_path):
         if "Allograft" in mcl_repair and text_info["mcl_allograft"] != "":
             mcl_specs.append(text_info["mcl_allograft"])
         if "Other" in mcl_repair and text_info["other_mcl_repair"] != "":
-            print("OTHER MCL REPAIR: ", repr(text_info["other_mcl_repair"]))
             mcl_specs.append(text_info["other_mcl_repair"])
 
         injury_data["ACL_REPAIR"] = acl_repair
@@ -334,9 +328,6 @@ def extract_info_from_pdf(pdf_path):
         injury_data = add_recurrence_info(22, injury_data, text_info)
         injury_data["DIAGNOSIS"] = text_info["diagnosis"]
         injury_data["OTHER_COMMENTS"] = text_info["other_comments"]
-
-    # Add FILE_FORMAT column for new format
-    injury_data["FILE_FORMAT"] = "NEW"
 
     return injury_data
 

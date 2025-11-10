@@ -111,19 +111,13 @@ def extract_info_from_pdf(pdf_path):
     
 
     occurrence_context = get_checkbox_array(45, 55)
-    print("OCCURRENCE_CONTEXT: ", occurrence_context)
     injury_data["OCCURRENCE_CONTEXT"] = ", ".join(occurrence_context)
-    print("CHECKBOX 53: ", checkboxes[str(53)])
-    print("CHECKBOX 54: ", checkboxes[str(54)])
     
 
 
     #OVERUSE_TRAUMA
     overuse_trauma = get_checkbox_array(55, 57)
-    if len(overuse_trauma) == 1:
-        injury_data["OVERUSE_TRAUMA"] = overuse_trauma[0]
-    elif len(overuse_trauma) > 1:
-        injury_data["OVERUSE_TRAUMA"] = "Too many answers"
+    injury_data["OVERUSE_TRAUMA"] = ", ".join(overuse_trauma)
 
     #ONSET
     onset = get_checkbox_array(57, 59)
@@ -146,14 +140,15 @@ def extract_info_from_pdf(pdf_path):
     #ACTION_DESCRIPTION
     injury_data["ACTION_DESCRIPTION"] = text_info["injury_mechanism"]
 
-    #RECURRENCE
+    #RECURRENCE - Extract separately from date, same logic as extract_pdf_new.py
     re_injury = get_checkbox_array(77, 79)
     if len(re_injury) == 1:
         if "Yes" in re_injury[0]:
+            injury_data["RECURRENCE"] = "Yes"
             if text_info["re_injury"] != "":
-                injury_data["RECURRENCE"] = "Yes, " + text_info["re_injury"]
+                injury_data["PREVIOUS_RETURN_DATE"] = parse_date_to_iso(text_info["re_injury"])
             else:
-                injury_data["RECURRENCE"] = "Yes"
+                injury_data["PREVIOUS_RETURN_DATE"] = "N/A"
         else:
             injury_data["RECURRENCE"] = "No"
     elif len(re_injury) > 1:

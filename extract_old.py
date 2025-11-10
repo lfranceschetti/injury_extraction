@@ -5,8 +5,8 @@ import sys
 warnings.filterwarnings("ignore", message=".*Numpy built with MINGW-W64.*")
 warnings.filterwarnings("ignore", message=".*MINGW-W64.*")
 
-from helpers.extract_word import extract_info_from_word
-from helpers.extract_pdf import extract_info_from_pdf
+from helpers.extract_word_old import extract_info_from_word
+from helpers.extract_pdf_old import extract_info_from_pdf
 from pathlib import Path
 from tqdm import tqdm
 import pandas as pd
