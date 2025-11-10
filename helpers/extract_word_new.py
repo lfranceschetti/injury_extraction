@@ -8,14 +8,41 @@ from constants.columns import row_new
 from helpers.iso import parse_date_to_iso
 from helpers.word import extract_xml_from_docx, get_text_display_from_runs, find_section_bounds, extract_form_fields
 from helpers.utils import get_form_type
+from helpers.extract_word import extract_info_from_word as extract_info_from_word_old
 
 
+
+
+def is_old_format(docx_path):
+    """Check if Word document is in old format by searching for the specific text."""
+    try:
+        namespaces = {
+            'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+            'w14': 'http://schemas.microsoft.com/office/word/2010/wordml'
+        }
+        with zipfile.ZipFile(docx_path, 'r') as docx_zip:
+            xml_content = docx_zip.read('word/document.xml')
+        root = ET.fromstring(xml_content)
+        paragraphs = list(root.findall('.//w:p', namespaces))
+        para_texts = [''.join([t.text for t in p.findall('.//w:t', namespaces) if t.text]) for p in paragraphs]
+        full_text = "\n".join(para_texts)
+        old_format_marker = "Denotes kept tick box alternatives not covered in the IOC consensus statement 2020 and the FIFA football consensus extension 2023"
+        return old_format_marker in full_text
+    except Exception:
+        return False
 
 
 def extract_info_from_word(docx_path):
     """
     Extract structured data from UEFA injury form Word document
     """
+    # Check if this is an old format document
+    if is_old_format(docx_path):
+        # Use the old extraction function
+        injury_data = extract_info_from_word_old(docx_path)
+        # Add FILE_FORMAT column
+        injury_data["FILE_FORMAT"] = "OLD"
+        return injury_data
     
     namespaces = {
         'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
@@ -117,7 +144,7 @@ def extract_info_from_word(docx_path):
 
 
 
-                    elif label and label.startswith("Other") and not label.startswith("Other training") and not label.startswith("Other cup match") and not label.startswith("Other player action"):
+                    elif label and label.startswith("Other") and not label.startswith("Other training") and not label.startswith("Other cup match") and not label.startswith("Other player action") and not label.startswith("Other bone"):
                         if entry.get('following_text') is not None and entry.get('following_text') != '':
                             label_text = (entry.get('following_text') or '').strip()
                         else:
@@ -253,13 +280,14 @@ def extract_info_from_word(docx_path):
             injury_data['CONTACT_POINT'] = ", ".join(contact_points)
 
 
-        player_substitution, player_substitution_time = extract_checkbox("Was the player substituted?", num_paragraphs=4, give_additional_info=True)
+        player_substitution, player_substitution_time = extract_checkbox("Was the player substituted?", num_paragraphs=4, give_additional_info=True, only_one=True)
         if player_substitution.strip() == "Yes, immediately":
             player_substitution = "Yes"
             player_substitution_time = "Immediately"
         injury_data['PLAYER_SUBSTITUTION'] = player_substitution
-        injury_data['PLAYER_SUBSTITUTION_TIME'] = player_substitution_time
-        injury_data['REVIEW_SYSTEM'] = extract_checkbox("Did you use the medical review system to inform your pitch side decision?", num_paragraphs=3)
+        if player_substitution_time and player_substitution != "Too many answers":
+            injury_data['PLAYER_SUBSTITUTION_TIME'] = player_substitution_time
+        injury_data['REVIEW_SYSTEM'] = extract_checkbox("Did you use the medical review system to inform your pitch side decision?", num_paragraphs=3, only_one=True)
         injury_data['CONCUSSION_DOMAINS'] = extract_checkbox("In case of concussion", num_paragraphs=10)
 
     if form_type == "HEAD":
@@ -270,9 +298,9 @@ def extract_info_from_word(docx_path):
     injury_data['ACTION'] = extract_checkbox("Circumstances and player", "Injury mechanism/player action")
     injury_data['ACTION_DESCRIPTION'] = extract_text("Injury mechanism/player action", num_paragraphs=2)
 
-    recurrence, recurrence_return_date = extract_checkbox("Was this a", num_paragraphs=4, give_additional_info=True)
+    recurrence, recurrence_return_date = extract_checkbox("Was this a", num_paragraphs=4, give_additional_info=True, only_one=True)
     injury_data['RECURRENCE'] = recurrence
-    if recurrence_return_date:
+    if recurrence_return_date and recurrence != "Too many answers":
         injury_data['PREVIOUS_RETURN_DATE'] = recurrence_return_date
 
     prv_cntrl_injury, prv_cntrl_injury_return_date = extract_checkbox("Previous contralateral injury of same diagnosis?", num_paragraphs=4, give_additional_info=True)
@@ -304,6 +332,8 @@ def extract_info_from_word(docx_path):
     if mcl_repair_spec and len(mcl_repair_spec) > 0:
         injury_data['MCL_REPAIR_SPECIFICATION'] = ", ".join(mcl_repair_spec)
 
+    # Add FILE_FORMAT column for new format
+    injury_data["FILE_FORMAT"] = "NEW"
 
     return injury_data
 

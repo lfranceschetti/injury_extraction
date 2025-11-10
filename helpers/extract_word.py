@@ -43,7 +43,7 @@ def extract_info_from_word(docx_path):
     
    
     # Helper to collect checked labels between two section headers
-    def extract_checkbox(start_marker, end_marker, only_one=False):
+    def extract_checkbox(start_marker, end_marker=None, only_one=False):
         start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker)
         results = []
         if start_idx_local is not None:
@@ -92,8 +92,8 @@ def extract_info_from_word(docx_path):
                     
 
     # Helper to collect displayed text from any FORMTEXT inputs between two section headers
-    def extract_text(start_marker, end_marker):
-        start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker)
+    def extract_text(start_marker, end_marker=None, num_paragraphs=None):
+        start_idx_local, end_idx_local = find_section_bounds(para_texts, start_marker, end_marker, num_paragraphs)
         collected = []
         if start_idx_local is None:
             return ""
@@ -141,13 +141,13 @@ def extract_info_from_word(docx_path):
 
     injury_data['INJURY_LOCATION'] = extract_checkbox('injury location', 'injury side')
     injury_data['INJURY_SIDE'] = extract_checkbox('injury side', 'injury type')
-    injury_data['INJURY_TYPE'] = extract_checkbox('injury type', 'training')
+    injury_data['TYPE'] = extract_checkbox('injury type', 'training')
     injury_data['OCCURRENCE'] = extract_checkbox('training', 'injury mechanism')
     injury_data['OVERUSE_TRAUMA'] = extract_checkbox('overuse or trauma', 'onset', only_one=True)
     injury_data['ONSET'] = extract_checkbox('gradual or sudden', 'contact', only_one=True)
     injury_data['CONTACT'] = extract_checkbox('contact', 'running/sprinting', only_one=True)
     injury_data['ACTION'] = extract_checkbox('indirect contact', 'injury mechanism')
-    injury_data['RE_INJURY'] = extract_checkbox('re-injury', 'referee', only_one=True)
+    injury_data['RECURRENCE'] = extract_checkbox('re-injury', 'referee', only_one=True)
     injury_data['REFEREE_SANCTION'] = extract_checkbox('referee', 'diagnostic exam')
     injury_data['DIAGNOSTIC_EXAMINATION'] = extract_checkbox('diagnostic exam', 'diagnosis')
     injury_data['SURGERY'] = extract_checkbox('surgery', 'menstrual phase', only_one=True)
@@ -158,7 +158,7 @@ def extract_info_from_word(docx_path):
     # Action description and other comments as free-text inputs
     injury_data['ACTION_DESCRIPTION'] = extract_text('player action', 'other information')
     injury_data['DIAGNOSIS'] = extract_text('diagnosis', 'surgery')
-    injury_data['OTHER_COMMENTS'] = extract_text('other comments', None)
+    injury_data['OTHER_COMMENTS'] = extract_text('other comments', num_paragraphs=1)
 
     #Not nice fix making overuse and onset not exclusive
     if injury_data['OVERUSE_TRAUMA'] == "Too many answers":

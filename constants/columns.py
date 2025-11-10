@@ -1,4 +1,6 @@
 column_names = [
+        "FILENAME",
+        "FILE_FORMAT",
         "NAME",
         "TEAM",
         "CODE",
@@ -6,14 +8,14 @@ column_names = [
         "RETURN_DATE",
         "INJURY_LOCATION",
         "INJURY_SIDE",
-        "INJURY_TYPE",
+        "TYPE",
         "OCCURRENCE",
         "OVERUSE_TRAUMA",
         "ONSET",
         "CONTACT",
         "ACTION",
         "ACTION_DESCRIPTION",
-        "RE_INJURY",
+        "RECURRENCE",
         "REFEREE_SANCTION",
         "DIAGNOSTIC_EXAMINATION",
         "DIAGNOSIS",
@@ -27,6 +29,8 @@ column_names = [
 
 column_names_new = [
     "FILENAME",
+    "FILE_FORMAT",
+    "UPDATED_AT",
     "FORM_TYPE",
     "NAME",
     "TEAM",
@@ -69,6 +73,9 @@ column_names_new = [
     "ACL_REPAIR_SPECIFICATION",
     "MCL_REPAIR_SPECIFICATION",
     "OTHER_COMMENTS",
+    "MENSTRUAL_PHASE",
+    "ORAL_CONTRACEPTIVES",
+    "HORMONAL_CONTRACEPTIVES",
     "UPDATED_AT"
 ]
 

@@ -106,7 +106,7 @@ checkbox_map_by_type = {
     "3": "Temporal",
     "4": "Cervical",
     "5": "Right",
-    "5": "Frontal",
+    "6": "Frontal",
     "7": "Parietal",
     "8": "Ear(s)",
     "9": "Midline",
@@ -210,12 +210,12 @@ checkbox_map_by_type = {
     "85": "Not accessible",
     
     # In case of concussion - Affected clinical domains
-    "86": "Cognition (e.g. confusion, difficulties remembering...)",
-    "87": "Headache/Migraine (e.g. head/neck pain, sensitivity to light / noise...)",
-    "88": "General fatigue (e.g. low energy...)",
-    "89": "Anxiety/Mood (e.g. sadness, irritability, emotional...)",
-    "90": "Vestibular (e.g. balance problems, dizziness...)",
-    "91": "Ocular (e.g. blurry or double vision etc...)",
+    "86": "Cognition (e.g. confusion, difficulties remembering…)",
+    "87": "Headache/Migraine (e.g. head/neck pain, sensitivity to light / noise…)",
+    "88": "General fatigue (e.g. low energy…)",
+    "89": "Anxiety/Mood (e.g. sadness, irritability, emotional…)",
+    "90": "Vestibular (e.g. balance problems, dizziness…)",
+    "91": "Ocular (e.g. blurry or double vision etc..)",
     "92": "Other",
     },
     "INJURY": {

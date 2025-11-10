@@ -13,6 +13,7 @@ from constants.columns import row_new
 from helpers.iso import parse_date_to_iso
 from helpers.pdf import get_text_info, detect_checkboxes, number_boxes_reading_order, get_checkbox_info, pdf_to_images, save_debug_visualization_with_labels
 from helpers.utils import get_form_type
+from helpers.extract_pdf import extract_info_from_pdf as extract_info_from_pdf_old
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
@@ -23,8 +24,7 @@ SPLIT_RULES = [
     {"key": "return_date", "start": "Date of return to full participation:", "end": " (Send"},
     {"key": "match", "start": "Match", "end": "(min. of injury)"},
     {"key": "injury_mechanism", "start": "(Describe in words)", "end": "Continues on the next page"},
-    {"key": "other_diagnostic_examination", "start": "Other (specify):", "end": "\n"},
-    {"key": "diagnosis", "start": "Diagnosis (Specify results of examination): ", "end": "\n"},
+    {"key": "other_diagnostic_examination", "start": "Other (specify):", "end": "Diagnosis (Spec"},
     {"key": "other_comments", "start": "Other comments:", "end": "\n"},
     {"key": "re_injury", "start": "return from previous injury):", "end": "\n"},
 ]
@@ -32,19 +32,21 @@ SPLIT_RULES = [
 HEAD_SPLIT_RULES = [
     {"key": "other_location", "start": "Occipital  Other:", "end": "Injury type"},
     {"key": "tbi", "start": "Mild Traumatic Brain Injury (TBI) with abnormality on MRI:", "end": "Moderate TBI"},
-    {"key": "other_type", "start": "Severe TBI\n", "end": "\n"},
-    {"key": "other_player_contact", "start": "Other body part:", "end": "\n"},
-    {"key": "other_object_contact", "start": "Other object:", "end": "\n"},
+    {"key": "other_type", "start": "Severe TBI \nOther:", "end": "\nWhen did the i"},
+    {"key": "other_player_contact", "start": "Other body part:", "end": "\nIn case"},
+    {"key": "other_object_contact", "start": "Other object:", "end": "\nCirc"},
     {"key": "player_substitution", "start": "Yes, after ", "end": " minutes"},
     {"key": "other_concussion", "start": "vision etc..) \n Other:", "end": "\n"},
 ]
 
 INJURY_SPLIT_RULES = [
+    {"key": "other_injury_location", "start": "Thigh  Other", "end": "\n Lumbosacral"},
+    {"key": "other_injury_type", "start": "ussion)  \nOther", "end": "\nWhen did t"},
     {"key": "ultrasonography_date", "start": "Ultrasonography (date): \n", "end": "\n"},
     {"key": "arthroscopy_date", "start": "Arthroscopy (date): ", "end": "\n  X-ray"},
     {"key": "x_ray_date", "start": "X-ray (date): ", "end": "MRI"},
     {"key": "mri_date", "start": "MRI (date): ", "end": "Other (specify):"},
-    {"key": "other_diagnostic_examination", "start": "Other (specify):", "end": "\n"},
+    {"key": "diagnosis", "start": "Diagnosis (Specify results of examination): ", "end": "\nWas an"},
 ]
 
 LOWER_EXTREMITIES_SPLIT_RULES = INJURY_SPLIT_RULES + [
@@ -52,7 +54,7 @@ LOWER_EXTREMITIES_SPLIT_RULES = INJURY_SPLIT_RULES + [
 ]
 
 KNEE_SPLIT_RULES = [
-    {"key": "other_injury_classification", "start": "ge PF  Other::", "end": "\n"},
+    {"key": "other_injury_classification", "start": "ge PF  Other:", "end": "\nInjury side"},
     {"key": "prev_ctrl_injury", "start": "nosis?  No  Unknown \n  Yes (If know, date of return from previous injury):", "end": "\n"},
     {"key": "let_all", "start": "LET/ALL (specify): ", "end": "Patella te"},
     {"key": "acl_allograft", "start": " band  Allograft (specify):", "end": "Hamstring te"},
@@ -60,20 +62,40 @@ KNEE_SPLIT_RULES = [
     {"key": "synthetic", "start": "Synthetic (specify):", "end": "Allogr"},
     {"key": "mcl_allograft", "start": "Allograft (specify):", "end": "Hamstring", "second_start": True},
     {"key": "other_mcl_repair", "start": "don  Other (specify):", "end": "Other comments", "second_start": True},
+    {"key": "diagnosis", "start": "Diagnosis (Specify results of examination): ", "end": "\nWas any"},
 ] + INJURY_SPLIT_RULES
 
 ILLNESS_SPLIT_RULES = [
     {"key": "name", "start": "Name:", "end": "Date of illness:"},
     {"key": "injury_date", "start": "Date of illness:", "end": "Date of return"},
-    {"key": "other_illness", "start": "ver \n Other:", "end": "\n"},
-    {"key": "other_affected_organ", "start": "nological Other:", "end": "\n"},
-    {"key": "re_injury", "start": "return from previous illness):", "end": "\n"},
+    {"key": "other_illness", "start": "ver \n Other:", "end": "\nIf ot"},
+    {"key": "other_affected_organ", "start": "nological Other:", "end": "\nOther inf"},
+    {"key": "re_injury", "start": "return from previous illness):", "end": "\nDiag"},
+    {"key": "diagnosis", "start": "Diagnosis (Specify results of examination): ", "end": "\nOther"},
 
 ]
 
 
 
+def is_old_format(pdf_path):
+    """Check if PDF is in old format by searching for the specific text."""
+    try:
+        reader = PdfReader(pdf_path)
+        full_text = "\n".join((page.extract_text() or "") for page in reader.pages)
+        old_format_marker = "Denotes kept tick box alternatives not covered in the IOC consensus statement 2020 and the FIFA football consensus extension 2023"
+        return old_format_marker in full_text
+    except Exception:
+        return False
+
+
 def extract_info_from_pdf(pdf_path):
+    # Check if this is an old format document
+    if is_old_format(pdf_path):
+        # Use the old extraction function
+        injury_data = extract_info_from_pdf_old(pdf_path)
+        # Add FILE_FORMAT column
+        injury_data["FILE_FORMAT"] = "OLD"
+        return injury_data
 
     injury_data = row_new.copy()
 
@@ -87,7 +109,7 @@ def extract_info_from_pdf(pdf_path):
 
     # Adjust these values to crop top/bottom/left/right (in pixels)
     # For 300 DPI: ~100px = 0.33 inches, ~200px = 0.67 inches
-    checkboxes = get_checkbox_info(pdf_path, crop_top=400, crop_bottom=400, crop_left=0, crop_right=0)
+    checkboxes = get_checkbox_info(pdf_path, crop_top=400, crop_bottom=400, crop_left=0, crop_right=0, save_debug=True)
     print("checkboxes: ", checkboxes)
 
     if form_type == "HEAD":
@@ -114,11 +136,17 @@ def extract_info_from_pdf(pdf_path):
     def get_checkbox_data(start, end, get_string=True, has_other=False, other_text="", only_one=False):
         array = [checkbox_map_by_type[form_type][str(i)] for i in range(start, end) if checkboxes[str(i)]]
         print("ARRAY: ", array)
-        if has_other and checkboxes[str(end-1)] == True:
-            if other_text != "":
-                #Remove the one that starts with "Other"
+
+        if has_other and type(has_other) == int:
+            if checkboxes[str(has_other)] == True:
                 array = [item for item in array if not item.startswith("Other")]
                 array.append(other_text)
+
+        elif has_other and checkboxes[str(end-1)] == True:
+            if other_text != "":
+                #Remove the one the last one 
+                array = array[:-1]  
+                array.append(other_text)    
          
         
         if only_one:
@@ -182,20 +210,18 @@ def extract_info_from_pdf(pdf_path):
         return injury_data
 
     def add_diagnostic_examination_info(start, injury_data, text_info):
-        diagnostic_examination = get_checkbox_data(start, start + 6)
-        injury_data["DIAGNOSTIC_EXAMINATION"] = diagnostic_examination
+        diagnostic_examination = get_checkbox_data(start, start + 6, has_other=True, other_text=text_info["other_diagnostic_examination"])
+        injury_data["DIAGNOSTIC_EXAMINATION"] = diagnostic_examination.replace("\n", "")
         examination_dates = []
-        if "Ultrasono" in diagnostic_examination:
+        if "Ultrasono" in diagnostic_examination and text_info["ultrasonography_date"] != "":
             examination_dates.append(parse_date_to_iso(text_info["ultrasonography_date"]).replace("\n", ""))
-        if "Arthroscopy" in diagnostic_examination:
-            print("ARTHROSCOPY DATE: ", repr(text_info["arthroscopy_date"].replace("\n", "")))
+        if "Arthroscopy" in diagnostic_examination and text_info["arthroscopy_date"] != "":
             examination_dates.append(parse_date_to_iso(text_info["arthroscopy_date"].replace("\n", "")))
-        if "X-ray" in diagnostic_examination:
+        if "X-ray" in diagnostic_examination and text_info["x_ray_date"] != "":
             examination_dates.append(parse_date_to_iso(text_info["x_ray_date"].replace("\n", "")))
-        if "MRI" in diagnostic_examination:
+        if "MRI" in diagnostic_examination and text_info["mri_date"] != "":
             examination_dates.append(parse_date_to_iso(text_info["mri_date"].replace("\n", "")))
-        if "Other" in diagnostic_examination:
-            examination_dates.append(text_info["other_diagnostic_examination"].replace("\n", ""))
+      
 
         print("EXAMINATION_DATES: ", repr(examination_dates))
         if examination_dates and len(examination_dates) > 0:
@@ -223,7 +249,6 @@ def extract_info_from_pdf(pdf_path):
         if "Mild Traumatic Brain Injury (TBI) with abnormality on MRI:" in injury_type and text_info["tbi"] is not None and text_info["tbi"] != "":
             injury_type = injury_type.split("MRI:")[0] + "MRI: " + text_info["tbi"] + injury_type.split("MRI:")[1]
         injury_data["TYPE"] = injury_type
-        occurrence = get_checkbox_data(22, 25, get_string=False, only_one=True)
         injury_data = add_occurence_info(22, injury_data, text_info)
         injury_data = add_injury_mechanism_info(37, injury_data, text_info, form_type)
         injury_data = add_recurrence_info(72, injury_data, text_info)
@@ -242,9 +267,9 @@ def extract_info_from_pdf(pdf_path):
 
 
     elif form_type == "INJURY":
-        injury_data["INJURY_LOCATION"] = get_checkbox_data(1, 20)
-        injury_data["INJURY_SIDE"] = get_checkbox_data(20, 22)
-        injury_data["TYPE"] = get_checkbox_data(22, 39)
+        injury_data["INJURY_LOCATION"] = get_checkbox_data(1, 20, has_other=16, other_text=text_info["other_injury_location"])
+        injury_data["INJURY_SIDE"] = get_checkbox_data(20, 23)
+        injury_data["TYPE"] = get_checkbox_data(23, 39, has_other=True, other_text=text_info["other_injury_type"])
         injury_data = add_occurence_info(39, injury_data, text_info)
         injury_data = add_injury_mechanism_info(54, injury_data, text_info, form_type)
         injury_data = add_other_info(76, injury_data, text_info)
@@ -309,6 +334,9 @@ def extract_info_from_pdf(pdf_path):
         injury_data = add_recurrence_info(22, injury_data, text_info)
         injury_data["DIAGNOSIS"] = text_info["diagnosis"]
         injury_data["OTHER_COMMENTS"] = text_info["other_comments"]
+
+    # Add FILE_FORMAT column for new format
+    injury_data["FILE_FORMAT"] = "NEW"
 
     return injury_data
 

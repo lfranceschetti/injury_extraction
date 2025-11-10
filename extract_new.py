@@ -2,8 +2,8 @@ from pathlib import Path
 from datetime import datetime
 from tqdm import tqdm
 import pandas as pd
-from extract_word_new import extract_info_from_word
-from extract_pdf_new import extract_info_from_pdf
+from helpers.extract_word_new import extract_info_from_word
+from helpers.extract_pdf_new import extract_info_from_pdf
 
 def _numeric_or_text_key(stem: str):
     try:

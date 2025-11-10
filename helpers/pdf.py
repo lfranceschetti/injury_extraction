@@ -10,6 +10,7 @@ from PIL import Image
 from constants.checkbox_map import checkbox_map, checkbox_map_by_type
 from constants.columns import row
 from helpers.iso import parse_date_to_iso
+import fitz
 
 
 
@@ -57,7 +58,7 @@ def get_text_info(pdf_path: str, split_rules: list) -> dict:
     return out
 
 
-def detect_checkboxes(img, use_hierarchy=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
+def detect_checkboxes(img, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0, old_pdfs=False):
     # Crop the image if needed
     h, w = img.shape[:2]
     img_cropped = img[crop_top:h-crop_bottom, crop_left:w-crop_right]
@@ -65,10 +66,15 @@ def detect_checkboxes(img, use_hierarchy=False, crop_top=0, crop_bottom=0, crop_
     gray = cv2.cvtColor(img_cropped, cv2.COLOR_RGB2GRAY)
     blur = cv2.GaussianBlur(gray, (3,3), 0)
     # Replace adaptive threshold with OTSU (automatic global threshold)
-    _, bw = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 
-    mode = cv2.RETR_TREE if use_hierarchy else cv2.RETR_EXTERNAL
-    cnts, _ = cv2.findContours(bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    if old_pdfs:
+        bw = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
+                               cv2.THRESH_BINARY_INV, 31, 10)
+        mode = cv2.RETR_EXTERNAL
+    else:
+        _, bw = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+        mode = cv2.RETR_LIST
+    cnts, _ = cv2.findContours(bw, mode, cv2.CHAIN_APPROX_SIMPLE)
 
     boxes = []
     for i, c in enumerate(cnts):
@@ -118,14 +124,14 @@ def detect_checkboxes(img, use_hierarchy=False, crop_top=0, crop_bottom=0, crop_
 
     # Heuristic: filled if inside mean > threshold
     for b in boxes:
-        b["checked"] = b["fill_ratio"] > 0.2
+        b["checked"] = b["fill_ratio"] > 0.15
 
     boxes = remove_duplicate_boxes(boxes)
 
     return boxes
 
 
-def number_boxes_reading_order(boxes, row_merge_px=25):
+def number_boxes_reading_order(boxes, row_merge_px=25, swap_map=None):
     # Assign a reading-order number to each box: left-to-right within rows, rows top-to-bottom
     if not boxes:
         return boxes
@@ -160,10 +166,9 @@ def number_boxes_reading_order(boxes, row_merge_px=25):
     ordered_copy = ordered.copy()
     
     # This is done to have the same order as in the word extraction
-    swap_map = { }
-
-    for dst_idx, src_idx in swap_map.items():
-        ordered[dst_idx] = ordered_copy[src_idx]
+    if swap_map is not None:
+        for dst_idx, src_idx in swap_map.items():
+            ordered[dst_idx] = ordered_copy[src_idx]
 
 
     # Assign numbers 1..N in order
@@ -174,7 +179,7 @@ def number_boxes_reading_order(boxes, row_merge_px=25):
     return boxes
 
 
-def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
+def get_checkbox_info(pdf_path: str, save_debug=False, debug_dir="debug", swap_map=None, old_pdfs=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
     imgs = pdf_to_images(pdf_path)
     box_map = {}
     if save_debug:
@@ -184,11 +189,11 @@ def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", crop_to
     cumulative_box_number = 0
     
     for idx, img in enumerate(imgs):
-        boxes = detect_checkboxes(img, use_hierarchy=False, crop_top=crop_top, crop_bottom=crop_bottom, crop_left=crop_left, crop_right=crop_right)
+        boxes = detect_checkboxes(img, old_pdfs=old_pdfs, crop_top=crop_top, crop_bottom=crop_bottom, crop_left=crop_left, crop_right=crop_right)
 
         
         # Number boxes in reading order
-        number_boxes_reading_order(boxes)
+        number_boxes_reading_order(boxes, swap_map=swap_map)
         
         # Renumber boxes to be cumulative across pages
         for box in boxes:
@@ -217,8 +222,20 @@ def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", crop_to
     return box_map
 
 def pdf_to_images(pdf_path: str, dpi=300):
-    pages = convert_from_path(pdf_path, dpi=dpi)
-    return [np.array(p) for p in pages]  # RGB arrays
+    pdf_document = fitz.open(pdf_path)
+    images = []
+
+    for page_num in range(len(pdf_document)):
+        page = pdf_document.load_page(page_num)
+        # Render page to a pixmap (like an image)
+        pix = page.get_pixmap(dpi=dpi)
+        # Convert to numpy RGB array (just like pdf2image)
+        img = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, pix.n)
+        if pix.n == 4:  # remove alpha channel if present
+            img = img[:, :, :3]
+        images.append(img)
+
+    return images
 
 
 def save_debug_visualization_with_labels(img, boxes, out_path):

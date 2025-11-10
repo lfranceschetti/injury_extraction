@@ -1,9 +1,9 @@
-from extract_word import extract_info_from_word
-from extract_pdf import extract_info_from_pdf
 from pathlib import Path
+from datetime import datetime
 from tqdm import tqdm
 import pandas as pd
-
+from helpers.extract_word_new import extract_info_from_word
+from helpers.extract_pdf_new import extract_info_from_pdf
 
 def _numeric_or_text_key(stem: str):
     try:
@@ -38,7 +38,7 @@ def _build_ordered_sequence_by_stem(folder: Path):
 
 
 if __name__ == "__main__":
-    print("Document Extractor (Word + PDF)")
+    print("Document Extractor (Word + PDF) - All Formats")
     print("=" * 50)
 
     base_dir = Path(__file__).parent
@@ -74,7 +74,6 @@ if __name__ == "__main__":
                 continue
             # store path relative to women/ to drop the 'women/' prefix
             injury_data["FILENAME"] = str(f.relative_to(women_dir)) if f.is_relative_to(women_dir) else str(f)
-            
             injury_data["SEX"] = "Female"
             rows.append(injury_data)
 
@@ -82,9 +81,11 @@ if __name__ == "__main__":
         print("No .docx or .pdf files found under 'men' or 'women'.")
     else:
         df = pd.DataFrame(rows)
-        # Ensure FILENAME is the first column
-        ordered_cols = ["FILENAME", "SEX"] + [c for c in df.columns if c not in ("FILENAME", "SEX")]
+        # Ensure FILENAME, SEX, and FILE_FORMAT are at the beginning
+        priority_cols = ["FILENAME", "SEX", "FILE_FORMAT"]
+        ordered_cols = priority_cols + [c for c in df.columns if c not in priority_cols]
         df = df[ordered_cols]
         output_excel = base_dir / "injury_data.xlsx"
         df.to_excel(output_excel, index=False)
         print(f"Saved Excel to {output_excel}")
+
