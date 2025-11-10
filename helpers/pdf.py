@@ -178,7 +178,7 @@ def number_boxes_reading_order(boxes, row_merge_px=25, swap_map=None):
     return ordered
 
 
-def get_checkbox_info(pdf_path: str, save_debug=True, debug_dir="debug", swap_map=None, old_pdfs=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
+def get_checkbox_info(pdf_path: str, save_debug=False, debug_dir="debug", swap_map=None, old_pdfs=False, crop_top=0, crop_bottom=0, crop_left=0, crop_right=0):
     imgs = pdf_to_images(pdf_path)
     box_map = {}
     if save_debug:

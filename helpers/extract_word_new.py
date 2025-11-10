@@ -4,7 +4,7 @@ import sys
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
-from constants.columns import row_new
+from constants.columns import row
 from helpers.iso import parse_date_to_iso
 from helpers.word import extract_xml_from_docx, get_text_display_from_runs, find_section_bounds, extract_form_fields
 from helpers.utils import get_form_type
@@ -60,7 +60,7 @@ def extract_info_from_word(docx_path):
     para_texts = [''.join([t.text for t in p.findall('.//w:t', namespaces) if t.text]) for p in paragraphs]
 
 
-    injury_data = row_new.copy()
+    injury_data = row.copy()
     
     # Extract all form fields
     text_fields, checkbox_entries, para_texts = extract_form_fields(root, paragraphs, namespaces)
@@ -210,7 +210,7 @@ def extract_info_from_word(docx_path):
 
 
 
-    injury_data = row_new.copy()
+    injury_data = row.copy()
     form_type = get_form_type("\n".join(para_texts))
     injury_data['FORM_TYPE'] = form_type
     

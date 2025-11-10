@@ -1,39 +1,10 @@
+
+
 column_names = [
-        "FILENAME",
-        "FORM_TYPE",
-        "NAME",
-        "TEAM",
-        "CODE",
-        "INJURY_DATE",
-        "RETURN_DATE",
-        "INJURY_LOCATION",
-        "INJURY_SIDE",
-        "TYPE",
-        "OCCURRENCE_ONSET_TYPE",
-        "OCCURRENCE_MATCH_MINUTE",
-        "OCCURRENCE_CONTEXT",
-        "OVERUSE_TRAUMA",
-        "ONSET",
-        "CONTACT",
-        "ACTION",
-        "ACTION_DESCRIPTION",
-        "RECURRENCE",
-        "PREVIOUS_RETURN_DATE",
-        "REFEREE_SANCTION",
-        "DIAGNOSTIC_EXAMINATION",
-        "DIAGNOSIS",
-        "SURGERY",
-        "MENSTRUAL_PHASE",
-        "ORAL_CONTRACEPTIVES",
-        "HORMONAL_CONTRACEPTIVES",
-        "OTHER_COMMENTS"
-]
-
-
-column_names_new = [
     "FILENAME",
     "UPDATED_AT",
     "FORM_TYPE",
+    "SEX",
     "NAME",
     "TEAM",
     "CODE",
@@ -83,4 +54,3 @@ column_names_new = [
 ]
 
 row = {name: "" for name in column_names}
-row_new = {name: "" for name in column_names_new}

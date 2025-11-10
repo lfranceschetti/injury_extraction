@@ -9,7 +9,7 @@ import sys
 import os
 from PIL import Image
 from constants.checkbox_map import checkbox_map, checkbox_map_by_type
-from constants.columns import row_new
+from constants.columns import row
 from helpers.iso import parse_date_to_iso
 from helpers.pdf import get_text_info, detect_checkboxes, number_boxes_reading_order, get_checkbox_info, pdf_to_images, save_debug_visualization_with_labels
 from helpers.utils import get_form_type
@@ -97,7 +97,7 @@ def extract_info_from_pdf(pdf_path):
         injury_data["FORM_TYPE"] = "OLD"
         return injury_data
 
-    injury_data = row_new.copy()
+    injury_data = row.copy()
 
     reader = PdfReader(pdf_path)
     full_text = "\n".join((page.extract_text() or "") for page in reader.pages)
